@@ -1,5 +1,9 @@
 package ContoCorrente;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Tester {
@@ -7,47 +11,37 @@ public class Tester {
 	public static void main(String[] args) {
 		
 		ContoCorrente conto1 = new ContoCorrente();
-		Scanner mioScann = new Scanner(System.in);
-		char scelta;
-		
-		Scanner nomeCognome = new Scanner(System.in);
-		System.out.print("Buongiorno, inserisci il tuo nome e cognome, separati dallo spazio --> ");
-		String[] nome = nomeCognome.nextLine().split(" ");
-		//System.out.println(nome[0]);
-		
-		
-		
-		
-		
-		
-//		do {
-//			System.out.println("---------- MENU ----------");
-//			System.out.println("1. Prelievo");
-//			System.out.println("2. Versamento");
-//			System.out.println("3. Esci");
-//			System.out.println("----------");
-//			
-//			System.out.print("Fai la tua scelta --> ");
-//			scelta = mioScann.next().charAt(0);
-//			
-//			switch(scelta) {
-//			case '1':
-//				
-//				break;
-//			case '2':
-//				break;
-//			case '3':
-//				System.out.println("Stai uscendo dal tuo conto...");
-//				break;
-//					
-//			default:
-//				System.out.println("Scusa non capisco questo comando");
-//				break;
-//			}
-//			
-//			System.out.println(conto1.toString());
-//			System.out.println(conto1.stampaInfo());
-//		}while(scelta != 3);
+//		dichiaro qua la variabile ric perchè se la dichiarassi all'interno del do{..}while non potrà essere visualizzata neanche dal while visto ch
+		char ric;
+
+		do {
+//			dichiaro qua l'input perchè sennò il messaggio di errore verrà stampaato in loop
+//			richiesta se vuole apprire un conto oppure se ne ha già uno
+			Scanner richiesta = new Scanner(System.in);
+			System.out.print("Buongiorno, vuoi aprire un nuovo conto? [s/n] --> ");
+			ric = richiesta.next().toLowerCase().charAt(0);
+			
+	//		switch 1
+			switch(ric) {
+	//		case 1.1
+				case 'y':
+				case 's':
+	//				richiamo della classe NuovoConto
+					NuovoConto nconto = new NuovoConto();
+					nconto.NuovoConto();
+					break;
+	//		case 1.2
+				case 'n':
+	//				richiamo della classe DisposizioneConto
+					DisposizioneConto dconto = new DisposizioneConto();
+					dconto.DisposizioneConto();
+					break;
+					
+				default:
+					System.out.println("Scusa non capisco questo comando");
+					break;
+			}
+		}while(ric != 's' && ric != 'n');
 	}
 
 }
