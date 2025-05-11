@@ -10,7 +10,6 @@ public class Tester {
 	
 	public static void main(String[] args) {
 		
-		ContoCorrente conto1 = new ContoCorrente();
 //		dichiaro qua la variabile ric perchè se la dichiarassi all'interno del do{..}while non potrà essere visualizzata neanche dal while visto ch
 		char ric;
 

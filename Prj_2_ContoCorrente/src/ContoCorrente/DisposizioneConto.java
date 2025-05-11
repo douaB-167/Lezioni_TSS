@@ -12,9 +12,15 @@ public class DisposizioneConto {
 		Scanner mioScann = new Scanner(System.in);
 		char scelta;
 		
-		Scanner disposizione_conto = new Scanner(System.in); 
-		System.out.print("Hai già un conto? [s/n] --> ");
-		char dis = disposizione_conto.next().toLowerCase().charAt(0);
+		char dis;
+		do{
+			Scanner disposizione_conto = new Scanner(System.in); 
+			System.out.print("Hai già un conto? [s/n] --> ");
+			dis = disposizione_conto.next().toLowerCase().charAt(0);
+			if(dis != 's' && dis != 'y' && dis != 'n') {
+				System.out.println("Scusa non capisco questo comando");
+			}
+		}while(dis != 's' && dis != 'y' && dis != 'n');
 		
 //		switch 3
 		switch(dis) {
@@ -34,8 +40,9 @@ public class DisposizioneConto {
 					System.out.println("---------- MENU ----------");
 					System.out.println("1. Prelievo");
 					System.out.println("2. Versamento");
-					System.out.println("3. Stampa scontrino");
-					System.out.println("4. Esci");
+					System.out.println("3. Bonifico");
+					System.out.println("4. Stampa scontrino");
+					System.out.println("5. Esci");
 					System.out.println("----------");
 					
 					System.out.print("Fai la tua scelta --> ");
@@ -61,19 +68,43 @@ public class DisposizioneConto {
 							conto.versamento(vers);
 							break;
 						case '3':
+//							richiesta dei dati per effettuare il bonifico correttamente
+//							dati beneficiario
+							Scanner beneficiario = new Scanner(System.in);
+							System.out.print("Inserisci i dati del beneficiario --> ");
+							String ben = beneficiario.nextLine();
+//							dati iban
+							Scanner iban = new Scanner(System.in);
+							String ib;
+//							controllo che l'iban sia della lunghezza giusta ossia 27 caratteri
+							do {
+								System.out.print("Inserisci l'iban del beneficiario --> ");
+								ib = iban.next();
+								if (ib.length() != 27) {
+									System.out.print("Iban del beneficiario errato! \nReinseriscilo --> ");
+									iban = new Scanner(System.in);
+									ib = iban.next();
+								}
+							}while(ib.length() != 27);
+//							richiesta dell'importo del bonifico
+							Scanner importo = new Scanner(System.in);
+							System.out.print("Inserisci l'importo del bonifico --> ");
+							double im = importo.nextDouble();
+//							stampa dei dati inseriti per effettuare il bonifico 
+							System.out.println("Il tuo bonifico al beneficiario " + ben + " numero iban " + ib + " con importo " + im + "€ è stato inviato correttamente da " + conto.titolare + " numero conto " + conto.numConto);
+//							richiamo della variabile prelievo() per aggiornare il saldo 
+							conto.prelievo(im);
+							break;
+						case '4':
 //							richiamo del metodo stampaInfo() in modo tale da visualizzare lo scontrino finale 
 							System.out.println(conto.stampaInfo(conto.titolare, conto.numConto, conto.saldo));
 							break;
-						case '4':
+						case '5':
 							System.out.println("Stai uscendo dal tuo conto...");
-							break;
-							
-						default:
-							System.out.println("Scusa non capisco questo comando");
 							break;
 					}
 					
-				}while(scelta != '4');
+				}while(scelta != '5');
 				break;
 //		case 3.2
 			case 'n':

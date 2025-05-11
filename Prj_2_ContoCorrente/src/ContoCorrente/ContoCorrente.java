@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ContoCorrente {
 	
-//	public static int prossimoNumeroConto = 1000;
+	public static int prossimoNumeroConto = 1000;
 	
 	public int contatore;  //+ public, - private
 	public int  numConto;
@@ -22,8 +22,8 @@ public class ContoCorrente {
 		this.titolare = titolare;
 		this.dataApertura = dataApertura;
 		this.numConto = numConto;
-//		this.numConto = prossimoNumeroConto;
-//        prossimoNumeroConto++;
+		this.numConto = prossimoNumeroConto;
+        prossimoNumeroConto++;
 	}
 
 
