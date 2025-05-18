@@ -28,43 +28,43 @@ Le parole vietate per denominare un identificatore: tutte le keyword di Java, in
 
 ## Convenzioni 
 1. Convenzioni per **classi** 
-* iniziale Maiuscola;
+    * iniziale Maiuscola;
 1. Convenzioni per **metodi**
-* camelCase
-* solitamente è un verbo
+    * camelCase 
+    * solitamente è un verbo
 1. Convenzioni per **variabili**
-* camelCase
+    * camelCase
 
 # Tipi in Java
 ## Tipi Primitivi
 ### Interi: 
 1. Byte: 
-* Dimensione: 8 bit
-* Intervallo: -128 a 127
+    * Dimensione: 8 bit
+    * Intervallo: -128 a 127
 1. Short:
-* Dimensione 16 bit
-* Intervallo: -32,768 a 32,767
+    * Dimensione 16 bit
+    * Intervallo: -32,768 a 32,767
 1. Int:
-* Dimensione: 32 bit
-* Intervallo: -2,147,483,648 a 2,147,483,647
+    * Dimensione: 32 bit
+    * Intervallo: -2,147,483,648 a 2,147,483,647
 1. Long:
-* Dimensione: 64 bit
-* Intervallo: -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807
+    * Dimensione: 64 bit
+    * Intervallo: -9,223,372,036,854,775,808 a 9,223,372,036,854,775,807
 ### Virgola mobile:
 1. Float: 
-* Dimensione: 32 bit
-* Precisione: Circa 7 cifre decimali
+    * Dimensione: 32 bit
+    * Precisione: Circa 7 cifre decimali
 1. Double:
-* Dimensione: 64 bit
-* Precisione: Circa 15 cifre decimali
+    * Dimensione: 64 bit
+    * Precisione: Circa 15 cifre decimali
 ### Testuali:
 1. Char:
-* Dimensione: 16 bit
-* Intervallo: 0 a 65,535 (rappresenta un singolo carattere Unicode)
+    * Dimensione: 16 bit
+    * Intervallo: 0 a 65,535 (rappresenta un singolo carattere Unicode)
 ### Logici:
 1. Boolean: 
-* Dimensione: non specificata (generalmente 1 bit)
-* Può assumere solo i valori true o false
+    * Dimensione: non specificata (generalmente 1 bit)
+    * Può assumere solo i valori true o false
 
 ## Tipi per oggetti
 ### Array
