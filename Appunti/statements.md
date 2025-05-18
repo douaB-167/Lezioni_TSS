@@ -1,9 +1,9 @@
 # Operatori di confronto
 * == "è uguale a";
 * != "non è uguale a";
-* > "maggiore di";
+* ">" "maggiore di";
 * < "minore di";
-* >= "maggiore uguale";
+* ">=" "maggiore uguale";
 * <= "minore uguale".
 
 # Operatori logici
@@ -40,7 +40,7 @@ if (ore > 10 ){
     fai qualcosa..
 }else{
     fai altro...
-} 
+} '''java
 
 # Switch statement
 '''java
@@ -54,21 +54,21 @@ case 2:
 case 3:
     faialtroancora
 b   reak;
-} 
+} '''java
 
 # Cicli 
 ## For 
 '''java 
 for (var i = 0; i < 10; i++) {
     document.write(i);
-} 
+} '''java
 ## While 
 '''java
 while (condizione){
     ...questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
-} 
+} '''java
 
 ## Do...while
 '''java 
@@ -76,4 +76,4 @@ do{
     ......questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
-}while(condizione) 
+}while(condizione); '''java
