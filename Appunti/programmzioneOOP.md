@@ -29,14 +29,14 @@ L'override si verifica quando una sottoclasse (classe derivata) fornisce una spe
 Il metodo nella sottoclasse deve avere la stessa firma del metodo nella superclasse.
 # Differenze riassuntive
 1. Dove avviene: 
-* Overloading: all'interno della stessa classe;
-* Override: tra una superclasse e una sottoclasse.
+    * Overloading: all'interno della stessa classe;
+    * Override: tra una superclasse e una sottoclasse.
 1. Firma del metodo:
-* Overloading: la firma deve essere diversa;
-* Override: la firma delle essere identica.
+    * Overloading: la firma deve essere diversa;
+    * Override: la firma delle essere identica.
 1. Scopo principale:
-* Overloading: fornire metodi con funzionalità simili ma input diversi;
-* Override: personalizzare il comportamento ereditato.
+    * Overloading: fornire metodi con funzionalità simili ma input diversi;
+    * Override: personalizzare il comportamento ereditato.
 In Java, l'annotation @Override può essere utilizzata per indicare esplicitamente che un metodo intende sovrascrivere un metodo della superclasse. Questo aiuta a prevenire errori, poiché il compilatore segnalerà se il metodo non sovrascrive effettivamente nulla.
 
 # Il metodo costruttore
@@ -82,6 +82,7 @@ I modificatori sono keyword di Java. Scritto prima di un qualsiasi componente (v
     * i metodi e le variabili sono visibili solo dalle classi dello stesso package della classe che li definisce.
 * **private**: può essere utilizzato su metodi e variabili di istanza. Rappresenta il modificatore più restrittivo. Visibilità: 
     * i metodi o le variabili definite private sono visibili solo all'interno della classe che li definisce -> **metodi Getters & Setters**
+    
 ![alt text](./img/image.png)
 
 # Altri modificatori
