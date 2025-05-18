@@ -46,7 +46,7 @@ Particolare metodo cone le seguenti caratteristiche:
 * è chiamato automaticamente (e solamente) ogni volta che è istanziato un oggetto;
 * è presente in ogni classe;
 * solatamente un metodo costruttore viene definito allo scopo di inizializzare le variabili d'istanza.
-'''java 
+```java 
 public class Punto{
     //metodo costruttore
     public Punto(){
@@ -58,7 +58,7 @@ public class Punto{
 # This
 Utilizaato all'interno di metodi o costruttori fa riferimento all'oggetto corrente, andando a risolvere problemi di ambiguità nella definizione dei parametri.
 ### esempio
-'''java
+```java
 public class Cliente {
     private String nome, indirizzo, numeroDiTelefono;
 
@@ -69,6 +69,7 @@ public class Cliente {
     this.numeroDiTelefono = numeroDiTelefono;
     }
 }
+```
 
 # Modificatori
 I modificatori sono keyword di Java. Scritto prima di un qualsiasi componente (variabile, classe, metodo) è in grado di cambiare la visibilità e l'accesso.
@@ -82,7 +83,7 @@ I modificatori sono keyword di Java. Scritto prima di un qualsiasi componente (v
     * i metodi e le variabili sono visibili solo dalle classi dello stesso package della classe che li definisce.
 * **private**: può essere utilizzato su metodi e variabili di istanza. Rappresenta il modificatore più restrittivo. Visibilità: 
     * i metodi o le variabili definite private sono visibili solo all'interno della classe che li definisce -> **metodi Getters & Setters**
-    
+
 ![alt text](./img/image.png)
 
 # Altri modificatori

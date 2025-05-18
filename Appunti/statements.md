@@ -35,16 +35,16 @@
 * condizione ? valore_se_vero : valore_se_falso
 
 # If...else statement
-'''java 
+```java 
 if (ore > 10 ){
     fai qualcosa..
 }else{
     fai altro...
 } 
-'''
+```
 
 # Switch statement
-'''java
+```java
 switch(condizione){
 case 1:
     faiqualcosa;
@@ -56,29 +56,29 @@ case 3:
     faialtroancora
     break;
 } 
-'''
+```
 
 # Cicli 
 ## For 
-'''java 
+```java 
 for (var i = 0; i < 10; i++) {
     document.write(i);
 } 
-'''
+```
 ## While 
-'''java
+```java
 while (condizione){
     ...questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
 } 
-'''
+```
 
 ## Do...while
-'''java
+```java
 do{
     ......questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
 }while(condizione); 
-'''
+```
