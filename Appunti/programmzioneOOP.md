@@ -55,6 +55,7 @@ public class Punto{
     public int x;
     public int y;
 } 
+```
 # This
 Utilizaato all'interno di metodi o costruttori fa riferimento all'oggetto corrente, andando a risolvere problemi di ambiguità nella definizione dei parametri.
 ### esempio
