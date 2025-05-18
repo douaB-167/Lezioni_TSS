@@ -40,7 +40,8 @@ if (ore > 10 ){
     fai qualcosa..
 }else{
     fai altro...
-} '''java
+} 
+'''
 
 # Switch statement
 '''java
@@ -53,27 +54,31 @@ case 2:
     break;
 case 3:
     faialtroancora
-b   reak;
-} '''java
+    break;
+} 
+'''
 
 # Cicli 
 ## For 
 '''java 
 for (var i = 0; i < 10; i++) {
     document.write(i);
-} '''java
+} 
+'''
 ## While 
 '''java
 while (condizione){
     ...questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
-} '''java
+} 
+'''
 
 ## Do...while
-'''java 
+'''java
 do{
     ......questo codice viene eseguito
     fino a quando la condizione
     risulta essere true
-}while(condizione); '''java
+}while(condizione); 
+'''

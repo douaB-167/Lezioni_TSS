@@ -16,9 +16,12 @@
             System.out.println("Fuori dal metodo: numero = " + numero);
         }
     }
+    '''
     ## output
+    '''
     Dentro il metodo: x = 20
     Fuori dal metodo: numero = 10
+    '''
 * **spiegazione**: la variabile numero mantiene il suo valore originale di 10 perchè il metodo modificaValore opera su una **copia** del suo valore.
 
 # Passaggio per riferimento (Pass by reference)
@@ -44,9 +47,12 @@
             System.out.println("Fuori dal metodo: nome = " + persona.nome);
         }
     }
+    '''
     ## output 
+    '''
     Dentro il metodo: nome = Bob
     Fuori dal metodo: nome = Bob
+    '''
 * **spiegazione**: il metodo modificaNome modifica l'attributo nome dell'oggetto persona originale perchè opera tramite il riferimento all'oggetto.
 
 ## In sintesi
