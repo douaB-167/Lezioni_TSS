@@ -7,18 +7,14 @@ public class Triangolo extends FormaGeometrica {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Triangolo(double base, double a, double b) {
-		super(base, a, b);
-	}
-
 	@Override
 	public double calcolaArea() {
-		return (this.base * this.altezza) / 2;
+		return Math.round((this.base * this.altezza) / 2);
 	}
 
 	@Override
 	public double calcolaPerimetro() {
-		return this.base + this.a + this.b;
+		return Math.round(Math.sqrt(Math.pow(this.base, 2) + Math.pow(this.altezza, 2;)));
 	}
 
 }
