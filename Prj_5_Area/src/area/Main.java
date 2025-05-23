@@ -21,9 +21,8 @@ public class Main {
 		
 		//Area Triangolo
 		Triangolo triangolo = new Triangolo(4, 7);
-		Triangolo triangolo1 = new Triangolo(4,  5, 5);
 		System.out.println("Area triangolo: " + triangolo.calcolaArea());
-		System.out.println("Perimetro triangolo: " + triangolo1.calcolaPerimetro());
+		System.out.println("Perimetro triangolo: " + triangolo.calcolaPerimetro());
 	}
 
 }
