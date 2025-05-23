@@ -1,5 +1,5 @@
-import lezione3_Metodi.Calcolatrice0;
-import lezione3_Metodi.MetodiAusiliari;
+import lezione03_Metodi.Calcolatrice0;
+import lezione03_Metodi.MetodiAusiliari;
 
 public class UsoMetodiDiAltri {
 	public static void main(String[] args) {
