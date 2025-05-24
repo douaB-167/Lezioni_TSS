@@ -2,21 +2,21 @@ package Azienda;
 
 public class HR extends RegistroAziendale {
 
-	public HR(Ruoli ruolo, double stipendio, String nome, String cognome, String numBadge, double orarioSettimanale) {
-		super(ruolo, stipendio, nome, cognome, numBadge, orarioSettimanale);
+	public HR(Ruoli ruolo, String nome, String cognome, double orarioSettimanale) {
+		super(ruolo, nome, cognome, orarioSettimanale);
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	double calcolaStipendio() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 1000 * 3 + 300;
 	}
 
 	@Override
-	String stampaDipendenti() {
-		// TODO Auto-generated method stub
-		return null;
+	void stampaDipendenti() {
+		for (Ruoli ruoli : ruolo.values()) {
+			System.out.println(ruoli);
+		}
 	}
 
 	@Override
@@ -25,4 +25,11 @@ public class HR extends RegistroAziendale {
 		return null;
 	}
 
+	@Override
+	public String calcolaBadge() {
+		// TODO Auto-generated method stub
+		return super.calcolaBadge();
+	}
+
+	
 }

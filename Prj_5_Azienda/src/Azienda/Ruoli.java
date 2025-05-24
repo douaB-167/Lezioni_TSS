@@ -2,9 +2,10 @@ package Azienda;
 
 public enum Ruoli {
 
-	Dipendente,
-	Programmatore,
+	Manager,
 	HR,
+	Programmatore,
 	Segretario,
-	Manager
+	Dipendente
+
 }

@@ -1,23 +1,25 @@
 package Azienda;
 
+import java.util.Random;
+
 public abstract class RegistroAziendale {
 	
+	//INCAPSULAMENTO
 	protected Ruoli ruolo;
-	protected double stipendio;
 	protected String nome;
 	protected String cognome;
 	protected String numBadge;
 	protected double orarioSettimanale;
 	
-	public RegistroAziendale(Ruoli ruolo, double stipendio, String nome, String cognome, String numBadge, double orarioSettimanale) {
+	//COSTRUTTORE A FIRMA PIENA
+	public RegistroAziendale(Ruoli ruolo, String nome, String cognome, double orarioSettimanale) {
 		this.ruolo = ruolo;
-		this.stipendio = stipendio;
 		this.nome = nome;
 		this.cognome = cognome;
-		this.numBadge = numBadge;
 		this.orarioSettimanale = orarioSettimanale;
 	}
 
+	//GETTER E SETTER
 	public Ruoli getDipendente() {
 		return this.ruolo;
 	}
@@ -28,15 +30,6 @@ public abstract class RegistroAziendale {
 	}
 
 
-	public double getStipendio() {
-		return stipendio;
-	}
-
-
-	public void setStipendio(double stipendio) {
-		this.stipendio = stipendio;
-	}
-	
 	public String getNome() {
 		return this.nome;
 	}
@@ -69,8 +62,26 @@ public abstract class RegistroAziendale {
 		this.orarioSettimanale = orarioSettimanale;
 	}
 	
+	
+	//METODI ASTRATTI
 	abstract double calcolaStipendio();
-	abstract String stampaDipendenti();
+	abstract void stampaDipendenti();
 	abstract String stampaAlRuolo();
+	
+	//METODO CONCRETO PER IL CALCOLO DEL NUMBADGE DI OGNI LAVORATORE 
+	//COMPOSTO DA: PRIMA LETTERA IN MAIUSCOLO NOME, PRIMA LETTERA IN MAIUSCOLO COGNOME. 3 NUMERI RANDOM, UNA LETTERA MAIUSCOLA RANDOM 
+	public String calcolaBadge() {
+		Random r = new Random();
+		Integer num = r.nextInt(1000);
+        char lettera = (char) ('A' + r.nextInt(26)); // da 'A' a 'Z'
+//      rand.nextInt(26) genera un numero casuale da 0 a 25.
+//      (char) ('A' + numero) trasforma quel numero in una lettera.
+        
+        this.numBadge = "";
+//        System.out.println(getNome().toUpperCase().charAt(0) + "" + getCognome().toUpperCase().charAt(0));
+		this.numBadge += getNome().toUpperCase().charAt(0) + "" + getCognome().toUpperCase().charAt(0);
+		this.numBadge += num.toString() + lettera;
+		return this.numBadge;
+	}
 	
 }
