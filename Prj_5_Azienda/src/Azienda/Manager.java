@@ -9,8 +9,8 @@ public class Manager extends RegistroAziendale {
 	}
 
 	@Override
-	double calcolaStipendio() {
-		return 1000 * 4 + 200;
+	public double calcolaStipendio() {
+		return super.calcolaStipendio() * 4.2;
 	}
 
 	@Override
@@ -21,9 +21,8 @@ public class Manager extends RegistroAziendale {
 	}
 
 	@Override
-	String stampaAlRuolo() {
-		// TODO Auto-generated method stub
-		return null;
+	void stampaAlRuolo() {
+		System.out.println(Ruoli.Manager + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
 	}
 
 	@Override

@@ -10,6 +10,7 @@ public abstract class RegistroAziendale {
 	protected String cognome;
 	protected String numBadge;
 	protected double orarioSettimanale;
+	protected static double stipendioBase = 1000;
 	
 	//COSTRUTTORE A FIRMA PIENA
 	public RegistroAziendale(Ruoli ruolo, String nome, String cognome, double orarioSettimanale) {
@@ -64,11 +65,16 @@ public abstract class RegistroAziendale {
 	
 	
 	//METODI ASTRATTI
-	abstract double calcolaStipendio();
 	abstract void stampaDipendenti();
-	abstract String stampaAlRuolo();
+	abstract void  stampaAlRuolo();
 	
-	//METODO CONCRETO PER IL CALCOLO DEL NUMBADGE DI OGNI LAVORATORE 
+	//METODI CONCRETI
+	//PER IL CALCOLO DELLO STIPENDIO
+	public double calcolaStipendio() {
+		return stipendioBase;
+	};
+	
+	//PER IL CALCOLO DEL NUMBADGE DI OGNI LAVORATORE 
 	//COMPOSTO DA: PRIMA LETTERA IN MAIUSCOLO NOME, PRIMA LETTERA IN MAIUSCOLO COGNOME. 3 NUMERI RANDOM, UNA LETTERA MAIUSCOLA RANDOM 
 	public String calcolaBadge() {
 		Random r = new Random();

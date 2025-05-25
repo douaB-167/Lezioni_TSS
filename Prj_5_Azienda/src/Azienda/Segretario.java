@@ -9,8 +9,8 @@ public class Segretario extends RegistroAziendale {
 	}
 
 	@Override
-	double calcolaStipendio() {
-		return 1000 * 2 + 41;
+	public double calcolaStipendio() {
+		return super.calcolaStipendio() * 1.9;
 	}
 
 	@Override
@@ -21,9 +21,8 @@ public class Segretario extends RegistroAziendale {
 	}
 
 	@Override
-	String stampaAlRuolo() {
-		// TODO Auto-generated method stub
-		return null;
+	void stampaAlRuolo() {
+		System.out.println(Ruoli.Segretario + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
 	}
 
 	@Override

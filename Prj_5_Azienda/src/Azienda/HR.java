@@ -8,8 +8,8 @@ public class HR extends RegistroAziendale {
 	}
 
 	@Override
-	double calcolaStipendio() {
-		return 1000 * 3 + 300;
+	public double calcolaStipendio() {
+		return super.calcolaStipendio() * 3.3;
 	}
 
 	@Override
@@ -20,9 +20,8 @@ public class HR extends RegistroAziendale {
 	}
 
 	@Override
-	String stampaAlRuolo() {
-		// TODO Auto-generated method stub
-		return null;
+	void stampaAlRuolo() {
+		System.out.println(Ruoli.HR + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
 	}
 
 	@Override

@@ -9,8 +9,8 @@ public class Dipendente extends RegistroAziendale {
 	}
 
 	@Override
-	double calcolaStipendio() {
-		return 1000 + 194;
+	public double calcolaStipendio() {
+		return super.calcolaStipendio() * 1.1;
 	}
 
 	@Override
@@ -21,9 +21,8 @@ public class Dipendente extends RegistroAziendale {
 	}
 
 	@Override
-	String stampaAlRuolo() {
-		// TODO Auto-generated method stub
-		return null;
+	void stampaAlRuolo() {
+		System.out.println(Ruoli.Dipendente + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
 	}
 
 	@Override
