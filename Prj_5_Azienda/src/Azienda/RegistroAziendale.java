@@ -9,15 +9,13 @@ public abstract class RegistroAziendale {
 	protected String nome;
 	protected String cognome;
 	protected String numBadge;
-	protected double orarioSettimanale;
 	protected static double stipendioBase = 1000;
 	
 	//COSTRUTTORE A FIRMA PIENA
-	public RegistroAziendale(Ruoli ruolo, String nome, String cognome, double orarioSettimanale) {
+	public RegistroAziendale(Ruoli ruolo, String nome, String cognome) {
 		this.ruolo = ruolo;
 		this.nome = nome;
 		this.cognome = cognome;
-		this.orarioSettimanale = orarioSettimanale;
 	}
 
 	//GETTER E SETTER
@@ -54,15 +52,6 @@ public abstract class RegistroAziendale {
 	public void setNumBadge(String numBadge) {
 		this.numBadge = numBadge;
 	}
-	
-	public double getOrarioSettimanale() {
-		return this.orarioSettimanale;
-	}
-	
-	public void setOrarioSettimanle(double orarioSettimanale) {
-		this.orarioSettimanale = orarioSettimanale;
-	}
-	
 	
 	//METODI ASTRATTI
 	abstract void stampaDipendenti();

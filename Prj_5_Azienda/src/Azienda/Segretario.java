@@ -2,9 +2,8 @@ package Azienda;
 
 public class Segretario extends RegistroAziendale {
 
-	public Segretario(Ruoli ruolo, String nome, String cognome, 
-			double orarioSettimanale) {
-		super(ruolo, nome, cognome, orarioSettimanale);
+	public Segretario(Ruoli ruolo, String nome, String cognome) {
+		super(ruolo, nome, cognome);
 		// TODO Auto-generated constructor stub
 	}
 

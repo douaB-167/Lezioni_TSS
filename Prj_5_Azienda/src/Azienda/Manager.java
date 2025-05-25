@@ -2,9 +2,8 @@ package Azienda;
 
 public class Manager extends RegistroAziendale {
 
-	public Manager(Ruoli ruolo, String nome, String cognome,
-			double orarioSettimanale) {
-		super(ruolo, nome, cognome, orarioSettimanale);
+	public Manager(Ruoli ruolo, String nome, String cognome) {
+		super(ruolo, nome, cognome);
 		// TODO Auto-generated constructor stub
 	}
 

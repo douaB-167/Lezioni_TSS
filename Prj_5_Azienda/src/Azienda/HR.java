@@ -2,8 +2,8 @@ package Azienda;
 
 public class HR extends RegistroAziendale {
 
-	public HR(Ruoli ruolo, String nome, String cognome, double orarioSettimanale) {
-		super(ruolo, nome, cognome, orarioSettimanale);
+	public HR(Ruoli ruolo, String nome, String cognome) {
+		super(ruolo, nome, cognome);
 		// TODO Auto-generated constructor stub
 	}
 
