@@ -4,31 +4,39 @@ public class AziendaTester {
 
 	public static void main(String[] args) {
 		
+		RegistroAziendale registroAziendale = new RegistroAziendale();
+		
 		//MANAGER --> POLIMORFISMO	
-		RegistroAziendale mioRegistroM = new Manager(Ruoli.Manager, "Matteo", "Rossi");
-		System.out.println("Ruolo: " + Ruoli.Manager +  "\t\tStipendio: " + mioRegistroM.calcolaStipendio() + "€");
-		mioRegistroM.stampaAlRuolo();
+		Dipendente manager1 = new Manager(Ruoli.Manager, "Doua", "Boufqir");
 		
 		//HR --> POLIMORFISMO	
-		RegistroAziendale mioRegistroH = new HR(Ruoli.HR, "Edoardo", "Mardi");
-		System.out.println("Ruolo: " + Ruoli.HR +  "\t\tStipendio: " + mioRegistroH.calcolaStipendio() + "€");
-		mioRegistroH.stampaAlRuolo();
+		Dipendente hr1 = new HR(Ruoli.HR, "Mario", "Longi");
 		
 		//PROGRAMMATORE --> POLIMORFISMO	
-		RegistroAziendale mioRegistroP = new Programmatore(Ruoli.Programmatore, "Maria", "Longo");
-		System.out.println("Ruolo: " + Ruoli.Programmatore +  "\tStipendio: " + mioRegistroP.calcolaStipendio() + "€");
-		mioRegistroP.stampaAlRuolo();
+		Dipendente programmatore1 = new Programmatore(Ruoli.Programmatore, "Edoardo", "Rossi");
 		
 		//SEGRETARIO --> POLIMORFISMO	
-		RegistroAziendale mioRegistroS = new Segretario(Ruoli.Segretario, "Luca", "Colli");
-		System.out.println("Ruolo: " + Ruoli.Segretario +  "\tStipendio: " + mioRegistroS.calcolaStipendio() + "€");
-		mioRegistroS.stampaAlRuolo();
+		Segretario segretario1 = new Segretario(Ruoli.Segretario, "Mario", "Bianchi");
 		
-		//DIPENDENTE --> POLIMORFISMO	
-		RegistroAziendale mioRegistroD = new Dipendente(Ruoli.Dipendente, "Doua", "Boufqir");
-		System.out.println("Ruolo: " + Ruoli.Dipendente +  "\tStipendio: " + mioRegistroD.calcolaStipendio() + "€");
-		mioRegistroD.stampaAlRuolo();
-//		mioRegistroD.stampaDipendenti();
+		registroAziendale.aggiungiDipendente(manager1);
+		registroAziendale.aggiungiDipendente(hr1);
+		registroAziendale.aggiungiDipendente(programmatore1);
+		registroAziendale.aggiungiDipendente(segretario1);
+		
+		registroAziendale.stampaDipendenti();
+		registroAziendale.stampaRuolo(Ruoli.Manager);
+		
+		System.out.println("Stipendio: " + manager1.calcolaStipendio());
+		manager1.mostraInfo();
+		
+		System.out.println("Stipendio: " + hr1.calcolaStipendio());
+		hr1.mostraInfo();
+		
+		System.out.println("Stipendio: " + programmatore1.calcolaStipendio());
+		programmatore1.mostraInfo();
+		
+		System.out.println("Stipendio: " + segretario1.calcolaStipendio());
+		segretario1.mostraInfo();
 		
 	}
 }

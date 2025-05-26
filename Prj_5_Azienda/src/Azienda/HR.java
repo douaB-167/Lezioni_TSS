@@ -1,6 +1,6 @@
 package Azienda;
 
-public class HR extends RegistroAziendale {
+public class HR extends Dipendente {
 
 	public HR(Ruoli ruolo, String nome, String cognome) {
 		super(ruolo, nome, cognome);
@@ -9,19 +9,7 @@ public class HR extends RegistroAziendale {
 
 	@Override
 	public double calcolaStipendio() {
-		return super.calcolaStipendio() * 3.3;
-	}
-
-	@Override
-	void stampaDipendenti() {
-		for (Ruoli ruoli : ruolo.values()) {
-			System.out.println(ruoli);
-		}
-	}
-
-	@Override
-	void stampaAlRuolo() {
-		System.out.println(Ruoli.HR + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
+		return super.stipendioBase * 3.3;
 	}
 
 	@Override

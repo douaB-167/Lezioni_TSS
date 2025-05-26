@@ -1,6 +1,6 @@
 package Azienda;
 
-public class Programmatore extends RegistroAziendale {
+public class Programmatore extends Dipendente {
 
 	public Programmatore(Ruoli ruolo, String nome, String cognome) {
 		super(ruolo, nome, cognome);
@@ -9,20 +9,9 @@ public class Programmatore extends RegistroAziendale {
 
 	@Override
 	public double calcolaStipendio() {
-		return super.calcolaStipendio() * 2.5;
+		return super.stipendioBase * 2.5;
 	}
 
-	@Override
-	void stampaDipendenti() {
-		for (Ruoli ruoli : ruolo.values()) {
-			System.out.println(ruoli);
-		}
-	}
-
-	@Override
-	void stampaAlRuolo() {
-		System.out.println(Ruoli.Programmatore + ": " + getNome() + " " + getCognome() + " numBadge: " + calcolaBadge());
-	}
 
 	@Override
 	public String calcolaBadge() {
