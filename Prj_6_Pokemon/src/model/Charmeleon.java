@@ -7,7 +7,7 @@ public class Charmeleon extends Pokemon implements TipoFuoco, Evolvibile{
 
 	public Charmeleon(String nome, int livello, int pvMax, String[] tipi) {
 		super(nome, livello, pvMax, tipi);
-		// TODO Auto-generated constructor stub
+
 	}
 
 	@Override
@@ -29,38 +29,34 @@ public class Charmeleon extends Pokemon implements TipoFuoco, Evolvibile{
 	}
 
 	@Override
-	public void lanciafianne() {
-		System.out.println(this.nome + " usa Lanciafiamme...VROOO");
+	public void lanciafiamme() {
+		System.out.println(this.nome + " usa Lanciafiamme...VROOOOOOO");
 	}
 
 	@Override
 	public void braciere() {
-		// TODO Auto-generated method stub
-		
+		System.out.println(this.nome + " usa Braciere");
 	}
 
 	@Override
 	public void nitrocarica() {
-		// TODO Auto-generated method stub
-		
+		System.out.println(this.nome + " usa Nitrocarica");
 	}
 
 	@Override
 	public void attaccoBase() {
 		// TODO Auto-generated method stub
-		
+		this.mossaSpeciale();
 	}
 
 	@Override
 	public void mossaSpeciale() {
-		// TODO Auto-generated method stub
-		
+		this.lanciafiamme();
 	}
 
 	@Override
 	public void faiVerso() {
-		// TODO Auto-generated method stub
-		
+		System.out.println(this.nome + " dice: CHARMELEOOOOOOOON" );
 	}
-
+	
 }

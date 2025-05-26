@@ -5,27 +5,14 @@ import utils.TipoFuoco;
 
 public class Charmander extends Pokemon implements TipoFuoco, Evolvibile{
 
-	public Charmander(String nome, int livello, int pvMax, String[] tipi) {
+	private static String[] tipi = {"fuoco"};
+
+//	public Charmander(String nome, int livello, int pvMax) {
+//		super(nome, livello, pvMax);
+//	}
+	
+	public Charmander(String nome, int livello, int pvMax) {
 		super(nome, livello, pvMax, tipi);
-		// TODO Auto-generated constructor stub
-	}
-
-	@Override
-	public void lanciafianne(Pokemon pokemon) {
-		// TODO Auto-generated method stub
-		System.out.println(pokemon.nome + " usa Lanciafiamme...VROOO");
-	}
-
-	@Override
-	public void braciere() {
-		// TODO Auto-generated method stub
-		System.out.println(this.nome + " usa Braciere");
-	}
-
-	@Override
-	public void nitrocarica() {
-		// TODO Auto-generated method stub
-		System.out.println(this.nome + " usa Nitrocarica");
 	}
 
 	@Override
@@ -36,32 +23,52 @@ public class Charmander extends Pokemon implements TipoFuoco, Evolvibile{
 
 	@Override
 	public void mossaSpeciale() {
-		// TODO Auto-generated method stub
-		this.lanciafianne();
+		
+		this.lanciafiamme();
 	}
 
 	@Override
 	public void faiVerso() {
-		// TODO Auto-generated method stub
 		System.out.println(this.nome + " dice CHAR CHAR");
+		
+	}
+
+	@Override
+	public void lanciafiamme() {
+		System.out.println(this.nome + " usa lanciafiamme");
+	}
+
+	@Override
+	public void braciere() {
+		System.out.println(this.nome + " usa Braciere");
+	}
+
+	@Override
+	public void nitrocarica() {
+		System.out.println(this.nome + " usa Nitrocarica");
 	}
 
 	@Override
 	public boolean puoEvolvere() {
-		// TODO Auto-generated method stub
-		return false;
+		return true; //stupido e ridondante
 	}
 
 	@Override
 	public String prossimaEvoluzione() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Charmeleon";
 	}
 
 	@Override
 	public Pokemon evolvi() {
-		// TODO Auto-generated method stub
-		return null;
+		if(puoEvolvere()) {
+			System.out.println("\n" +  this.nome + " si sta evolvendo!!");
+			System.out.println("Diventa più grande e forte");
+			System.out.println("Evoluzione completata!!");
+			return new Charmeleon("Charmeleon", 6, 50, tipi);
+		}else {
+			System.out.println(this.nome + " non riesce ancora ad evolvere !!");
+			return this;
+		}
 	}
 
 }
