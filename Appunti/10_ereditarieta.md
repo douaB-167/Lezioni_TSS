@@ -6,13 +6,13 @@ L'ereditarietà permette di creare una nuova classe (sottoclasse) basata su una 
  * Aggungere nuovi campi e metodi;
  * Sovrascrivere i metodi esistenti;
  * Utilizzare i membri ereditati.
-In Java, l'ereditarietà si implementa usando la parola chiave ```java extends ```.
+In Java, l'ereditarietà si implementa usando la parola chiave ```extends```.
 
 ## Caratteristiche dell'ereditarietà in Java
  * **Ereditarietà singola**: Java supporta solo l'ereditarietà singola (una classe può estendere **SOLO** una superclasse);
  * **Modificatore ```protected```**: Permette l'accesso ai membri della superclasse dalle sottoclassi;
  * **Parola chiave ```super```**: Permette di chiamare metodi della superclasse dalla sottoclasse;
- * **Classe Object**: Tutte le classi in Java derivano implicitamente dalla classe ```java Object```;
+ * **Classe Object**: Tutte le classi in Java derivano implicitamente dalla classe ```Object```;
  * **Polimorfismo**: Un riferimento di tipo superclasse può puntare a oggetti delle sottoclassi.
 
 ## Vantaggi dell'ereditarietà
