@@ -11,7 +11,7 @@ In Java, l'ereditarietà si implementa usando la parola chiave ```java extends `
 ## Caratteristiche dell'ereditarietà in Java
  * **Ereditarietà singola**: Java supporta solo l'ereditarietà singola (una classe può estendere **SOLO** una superclasse);
  * **Modificatore ```protected```**: Permette l'accesso ai membri della superclasse dalle sottoclassi;
- * **Parola chiave ```super ```**: Permette di chiamare metodi della superclasse dalla sottoclasse;
+ * **Parola chiave ```super```**: Permette di chiamare metodi della superclasse dalla sottoclasse;
  * **Classe Object**: Tutte le classi in Java derivano implicitamente dalla classe ```java Object```;
  * **Polimorfismo**: Un riferimento di tipo superclasse può puntare a oggetti delle sottoclassi.
 
