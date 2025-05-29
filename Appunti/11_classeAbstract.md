@@ -17,6 +17,9 @@ Una classe astratta è una classe che non può essere istanziata direttamente e 
  * Quando si vuole dichiarare metodi non-statici e non-final che le sottoclassi devono implementare;
  * Quando si ha bisogno di accedere a modificatori diversi da public (protected, private)
 
+## ATTENZIONE:
+Le classi che estendono una classe astratta, implementano solo i metodi astratti e non quelli concreti. Nell'esempio qui sotto la classe Cerchio implementa solo calcolaArea() e calcolaPerimetro() e NON mostraInfo() perchè è un metodo concreto all'interno della classe astratta
+
 #### esempio
 ```java
 public abstract class FormaGeometrica {
