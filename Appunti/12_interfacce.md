@@ -1,6 +1,7 @@
 # Interfacce 
 ## Definizione
-Un'interfaccia in Java è un **contratto** che definisce un insieme di metodi che una classe deve **implementare**. E' simile a una classe astratta, ma può contenere SOLO **metodi astratti e costanti**.
+Un'interfaccia in Java è un **contratto** che definisce un insieme di metodi che una classe deve **implementare**. E' simile a una classe astratta, ma può contenere SOLO **metodi astratti e costanti**.  
+Un contratto con metodi senza implementazione.
 
 ## Caratteristiche principali
 ### Sintassi base

@@ -1,5 +1,5 @@
 # Che cos'è java
-Java è un linguaggio di alto livello e orientato agli oggetti, creato dalla Sun Microsystem nel 1995.
+Java è un linguaggio di alto livello e orientato agli oggetti, creato dalla Sun Microsystem nel 1995.  
 Le caratteristiche dei linguaggi di programmazione Java sono:
 * La tipoloia di linguaggio **orientato agli oggetti** (ereditarietà, polimorfismo, incapsulamento);
 * La **gestione della memoria** effettuata automaticamente dal sistema, il quale si preoccupa dell'allocazione e della successiva deallocazione della memoria (il programmatore viene liberato dagli obblighi di gestione della memoria);

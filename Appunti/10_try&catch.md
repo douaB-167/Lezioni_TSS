@@ -1,5 +1,6 @@
 # Eccezioni in Java
-Le **eccezioni** in Java rappresentano eventi anomali o condizioni di errore che interrompono il normale flusso di esecuzione di un programma. Forniscono un meccanismo strutturato per gestire queste situazioni impreviste, rendendo il codice più robusto e manutenibile
+Le **eccezioni** in Java rappresentano eventi anomali o condizioni di errore che interrompono il normale flusso di esecuzione di un programma. Forniscono un meccanismo strutturato per gestire queste situazioni impreviste, rendendo il codice più robusto e manutenibile.  
+Se si aggiunge anche l'operatore ```finally``` dopo il catch, il corpo definito all'interno del finally verrà sempre eseguito indipendentemente dal codice precedente.
 
 ## Tipi di eccezioni 
 1. Eccezioni Controllare (Checked Exceptions):

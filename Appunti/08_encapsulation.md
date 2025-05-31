@@ -2,7 +2,7 @@
 Uno dei quattro pilastri fondamentali della programmazione orientata agli oggetti (OOP), insieme a ereditarietà, polimorfismo e astrazione.
 
 ## Cos'è
-L'incapsulamento è il principio di raggruppare i dati (variabili/attributi) e i metodi (funzioni/comportamenti), che operano su quei dati, all'interno di una singola classe. Allo stesso tempo, l'incapsulamento implica la restrizione dell'accesso diretto ai comportamenti interni (dati) di un oggetto.
+L'incapsulamento è il principio di raggruppare i dati (variabili/attributi) e i metodi (funzioni/comportamenti), che operano su quei dati, all'interno di una singola classe. Allo stesso tempo, l'incapsulamento implica la restrizione dell'accesso diretto ai comportamenti interni (dati) di un oggetto.  
 In pratica, l'incapsulamento significa:
  * **Bunding (Raggruppamento)**: Tenere insieme dati e codice che agiscono su quei dati. Una classe è l'unità di incapsulamento.
  * **Information Hiding (Nascondere le informazioni)**: Rendere i dati (variabili di istanza) di una classe **privati** e fornire i metodi pubblici (**getter e setter**) per accedere e modificare quei dati in modo controllato.

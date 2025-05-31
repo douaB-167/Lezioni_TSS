@@ -75,6 +75,7 @@ while (condizione){
 ```
 
 ## Do...while
+Un ciclo che si ripete ```almeno``` una volta.
 ```java
 do{
     ......questo codice viene eseguito

@@ -1,9 +1,9 @@
 # Garbege collector
-Strumento utilizzato per la gestione dell memoria.
+Strumento utilizzato per la gestione dell memoria.  
 Il garbage colector traccia le variabili inutilizzate e le distrugge in quanto non più necessarie.
 
 # Le classi
-La classe è un **tipo di dato complesso**, definisce le caratteristiche di un oggetto. Posso avere più oggetti dello stesso tipo, tutti diversi tra loro (dal punto di vista delle caratteristiche) ma tutti saranno **istanze della classe**.
+La classe è un **tipo di dato complesso**, definisce le caratteristiche di un oggetto. Posso avere più oggetti dello stesso tipo, tutti diversi tra loro (dal punto di vista delle caratteristiche) ma tutti saranno **istanze della classe**.  
 Un oggetto in Java può esistere solo se esiste la relativa classe. La creazione dell'oggetto è chiamata: istanza della classe. Un **oggetto** è un'istanza di una classe.
 
 # I metodi 
@@ -25,7 +25,7 @@ In Java, l'override e l'overloading sono due meccanismi fondamentali che permett
 L'overloading si verifica quando una classe contiene più metodi con lo stesso nome, ma con *firme* diverse. La firma di un metodo è determinata dal numero, dal tipo e dall'ordine dei suoi parametri.
 ## Override (Sovrascrittura)
 ### Definizione
-L'override si verifica quando una sottoclasse (classe derivata) fornisce una specifica implementazione di un metodo che è già definito nella sua superclasse (classe base).
+L'override si verifica quando una sottoclasse (classe derivata) fornisce una specifica implementazione di un metodo che è già definito nella sua superclasse (classe base).  
 Il metodo nella sottoclasse deve avere la stessa firma del metodo nella superclasse.
 # Differenze riassuntive
 1. Dove avviene: 
@@ -85,7 +85,7 @@ I modificatori sono keyword di Java. Scritto prima di un qualsiasi componente (v
 * **private**: può essere utilizzato su metodi e variabili di istanza. Rappresenta il modificatore più restrittivo. Visibilità: 
     * i metodi o le variabili definite private sono visibili solo all'interno della classe che li definisce -> **metodi Getters & Setters**
 
-![alt text](./img/image.png)
+![alt text](./img/access_modifiers.png)
 
 # Altri modificatori
 * **final**: può essere utilizzato su classi, metodi e variabili. Questo modificatore indica che la caratteristica non può essere modificata. Comportamento:
@@ -104,7 +104,7 @@ Questa tecnica consente di nascondere il funzionamento interno di una porzione d
 Principio dell’ Information Hiding ti dico cosa ma non ti dico come. L’aspetto importante è come assemblare i vari elementi, dandoci delle interfacce per permettere l’assemblaggio ma non come è fatto un determinato oggetto.
 
 ## Ereditarietà
-Questa tecnica consente di **estendere** le caratteristiche di una classe ad un’altra classe. Questi attributi sono quindi utilizzabili dalla nuova classe che **eredita**. Si parla di attributi e metodi definiti public o protected, quelli private non possono essere ereditati.
+Questa tecnica consente di **estendere** le caratteristiche di una classe ad un’altra classe. Questi attributi sono quindi utilizzabili dalla nuova classe che **eredita**. Si parla di attributi e metodi definiti public o protected, quelli private non possono essere ereditati.  
 Quando una classe eredita può:
 * definire i suoi metodi e attributi;
 * ridefinire quelli della classe da cui eredita (meccanismo dell'overriding), keyword **extends**
