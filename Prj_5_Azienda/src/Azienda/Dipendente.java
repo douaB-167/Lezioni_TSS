@@ -69,4 +69,10 @@ public abstract class Dipendente {
 		System.out.println("Nome: " + getNome() + " Cognome: " + getCognome());
 	}
 	
+	@Override
+	public String toString() {
+	    return ruolo.toString();
+	}
+
+	
 }

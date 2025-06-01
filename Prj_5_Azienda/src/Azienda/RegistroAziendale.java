@@ -28,7 +28,7 @@ public class RegistroAziendale {
 		System.out.println("------- ELENCO DIPENDENTI PER RUOLO -------");
 		for(Dipendente dip: listaDipendenti){
 			if(dip.ruolo.equals(ruolo)) {
-				System.out.println(dip);
+				System.out.println(dip.toString());
 			}
 		}
 	}
